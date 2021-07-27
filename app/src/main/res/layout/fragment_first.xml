@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="画像加工アプリ"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="簡単で直感的なコラージュが可能です"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="515dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="562dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="25"
+        android:src="@drawable/_0160408_img_0800_1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-342dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="348dp"
+        android:layout_height="427dp"
+        android:rotation="25"
+        android:src="@drawable/young_woman_drinking_lemonade_and_overlooking_the_city_picjumbo_com"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="454dp"
+        android:layout_height="489dp"
+        android:rotation="25"
+        android:src="@drawable/hakkutu01_790x480"
+        tools:layout_editor_absoluteX="-223dp"
+        tools:layout_editor_absoluteY="-25dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="25"
+        android:src="@drawable/screen_shot_2017_01_22_at_15_37_10_1"
+        tools:layout_editor_absoluteX="-198dp"
+        tools:layout_editor_absoluteY="465dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="25"
+        android:src="@drawable/cats_300x189"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="618dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

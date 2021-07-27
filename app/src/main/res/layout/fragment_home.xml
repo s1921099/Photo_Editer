@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="379dp"
+        android:layout_height="576dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="47dp"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="410dp"
+        android:layout_height="399dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="334dp">
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@android:drawable/presence_invisible"
+            android:tint="#3DCABE"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@android:drawable/presence_invisible"
+            android:tint="#EA7F22"
+            tools:layout_editor_absoluteX="287dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="セピア"
+            tools:layout_editor_absoluteX="286dp"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@android:drawable/presence_invisible"
+            tools:layout_editor_absoluteX="185dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="モノクロ"
+            tools:layout_editor_absoluteX="177dp"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ネガティブ"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="82dp"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="フィルタ"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="43dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="ペン"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@android:drawable/ic_menu_edit"
+            android:tint="#000000"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="157dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@android:drawable/ic_menu_delete"
+            android:tint="#000000"
+            tools:layout_editor_absoluteX="249dp"
+            tools:layout_editor_absoluteY="157dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CDDC39"
+            android:text="明度・彩度"
+            tools:layout_editor_absoluteX="151dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="編集"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="320dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:src="@android:drawable/ic_menu_revert"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:background="#00BCD4"
+        android:src="@android:drawable/stat_sys_download"
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@android:drawable/ic_input_delete"
+        android:tint="#000000"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="325dp">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="54dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@android:drawable/ic_menu_always_landscape_portrait"
+        android:tint="#000000"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="-8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

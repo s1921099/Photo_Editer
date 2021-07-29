@@ -3,7 +3,7 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/paint_activity_horizontal_margin"
     android:paddingRight="@dimen/paint_activity_horizontal_margin"
     android:paddingTop="@dimen/paint_activity_vertical_margin"
-    android:paddingBottom="@dimen/paint_activity_vertical_margin" tools:context=".MainActivity"
+    android:paddingBottom="@dimen/paint_activity_vertical_margin" tools:context=".PaintMainActivity"
     android:orientation="vertical">
 
     <LinearLayout

@@ -1,5 +1,5 @@
 package com.example.akimoto;
-//うおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお
+//ｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗ
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;

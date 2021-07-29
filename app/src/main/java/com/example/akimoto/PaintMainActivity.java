@@ -58,7 +58,7 @@ public class PaintMainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.paint_activity_main);
         paintcanvasView = (PaintCanvasView) findViewById(R.id.PaintView);
 
         // 色の選択のラジオボタン

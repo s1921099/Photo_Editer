@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/paint_activity_horizontal_margin"
+    android:paddingRight="@dimen/paint_activity_horizontal_margin"
+    android:paddingTop="@dimen/paint_activity_vertical_margin"
+    android:paddingBottom="@dimen/paint_activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <RadioGroup
+            android:id="@+id/colorRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/black"
+                android:checked="true"
+                android:text="黒"
+                android:buttonTint="@color/black_color"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/red"
+                android:checked="false"
+                android:text="赤"
+                android:buttonTint="@color/red_color"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/green"
+                android:checked="false"
+                android:text="緑"
+                android:buttonTint="@color/green_color"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blue"
+                android:checked="false"
+                android:text="青"
+                android:buttonTint="@color/blue_color"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yellow"
+                android:checked="false"
+                android:text="黄"
+                android:buttonTint="@color/yellow_color"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/undoButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/paint_button_background"
+            android:text="戻る"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/clearButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/paint_button_background"
+            android:text="クリア"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <com.example.akimoto.PaintCanvasView
+        android:id="@+id/PaintView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.example.akimoto.PaintCanvasView>
+</LinearLayout>

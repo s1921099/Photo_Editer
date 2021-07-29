@@ -11,13 +11,12 @@ import android.widget.RadioGroup;
 import androidx.appcompat.app.AppCompatActivity;
 //paint機能
 public class PaintMainActivity extends AppCompatActivity {
-    private CanvasView canvasView;
+    private PaintCanvasView paintcanvasView;
 
     // 「取消」ボタンボタンのイベントリスナー
     public class UndoBtnOnClickListener implements View.OnClickListener {
         @Override
-        public void onClick(View v) {
-            canvasView.undo();
+        public void onClick(View v) { paintcanvasView.undo();
         }
     }
 
@@ -25,7 +24,7 @@ public class PaintMainActivity extends AppCompatActivity {
     public class ClearBtnOnClickListener implements View.OnClickListener {
         @Override
         public void onClick(View v) {
-            canvasView.clear();
+            paintcanvasView.clear();
         }
     }
 
@@ -38,19 +37,19 @@ public class PaintMainActivity extends AppCompatActivity {
             String colorStr = radioButton.getText().toString();
             switch (colorStr) {
                 case "黒":
-                    canvasView.setColor(Color.BLACK);
+                    paintcanvasView.setColor(Color.BLACK);
                     break;
                 case "赤":
-                    canvasView.setColor(Color.RED);
+                    paintcanvasView.setColor(Color.RED);
                     break;
                 case "青":
-                    canvasView.setColor(Color.BLUE);
+                    paintcanvasView.setColor(Color.BLUE);
                     break;
                 case "緑":
-                    canvasView.setColor(Color.GREEN);
+                    paintcanvasView.setColor(Color.GREEN);
                     break;
                 case "黄":
-                    canvasView.setColor(Color.YELLOW);
+                    paintcanvasView.setColor(Color.YELLOW);
                     break;
             }
         }
@@ -60,7 +59,7 @@ public class PaintMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        canvasView = (CanvasView) findViewById(R.id.PaintView);
+        paintcanvasView = (PaintCanvasView) findViewById(R.id.PaintView);
 
         // 色の選択のラジオボタン
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.colorRadio);
@@ -88,4 +87,4 @@ public class PaintMainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-}
+

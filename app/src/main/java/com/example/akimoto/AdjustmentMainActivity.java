@@ -17,6 +17,8 @@ import android.widget.TextView;
 import java.io.FileNotFoundException;
 
 public class AdjustmentMainActivity extends Activity {
+
+    //HSV色空間 色相(Hue) 彩度(Saturation)明度(Value)
     Button btnLoadImage;
     TextView text1;
     ImageView imageResult;
@@ -24,11 +26,10 @@ public class AdjustmentMainActivity extends Activity {
     TextView hueText, satText, valText;
     Button btnResetHSV;
 
-    final int R_IMAGE1 = 1;
+    final int R_IMAGE = 1;
 
     Uri source;
     Bitmap bitmapMaster;
-    Canvas canvasMaster;
 
 
     @Override
@@ -50,8 +51,8 @@ public class AdjustmentMainActivity extends Activity {
                 Intent intent = new Intent(
                         Intent.ACTION_PICK,
                         android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                //とった画像をR_IMAGE1とする
-                startActivityForResult(intent, R_IMAGE1);
+                //とった画像をR_IMAGEとする
+                startActivityForResult(intent, R_IMAGE);
             }
         });
 
@@ -83,7 +84,7 @@ public class AdjustmentMainActivity extends Activity {
         super.onActivityResult ( requestCode , resultCode , data );
 //リクエストOKだったそして、R_IMAGE1 を取れたら
         if ( resultCode == RESULT_OK ) {
-            if ( requestCode == R_IMAGE1 ) {
+            if ( requestCode == R_IMAGE ) {
                 source = data.getData ( );
                 //とったデータ
                 try {
@@ -169,19 +170,24 @@ public class AdjustmentMainActivity extends Activity {
                 plHSV[ 0 ] = plHSV[ 0 ] + settingHue;
                 if ( plHSV[ 0 ] < 0.0f ) {
                     plHSV[ 0 ] = 0.0f;
-                } else if ( plHSV[ 0 ] > 365.0f ) {
+
+                 } else if ( plHSV[ 0 ] > 365.0f ) {
                     plHSV[ 0 ] = 365.0f;
                 }
+
                 plHSV[ 2 ] = plHSV[ 2 ] + settingVal;
                 if ( plHSV[ 2 ] < 0.0f ) {
                     plHSV[ 2 ] = 0.0f;
-                } else if ( plHSV[ 2 ] > 1.0f ) {
+
+                 } else if ( plHSV[ 2 ] > 1.0f ) {
                     plHSV[ 2 ] = 1.0f;
                 }
+
                 plHSV[ 1 ] = plHSV[ 1 ] + settingSat;
                 if ( plHSV[ 1 ] < 0.0f ) {
                     plHSV[ 1 ] = 0.0f;
-                } else if ( plHSV[ 1 ] > 1.0f ) plHSV[ 1 ] = 1.0f;
+
+                 } else if ( plHSV[ 1 ] > 1.0f ) plHSV[ 1 ] = 1.0f;
 
 
                 // リセットする
